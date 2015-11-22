@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Top Stories - The Hottest from CNN, ABC and NBC
+    </title>
+    <link href='http://fonts.googleapis.com/css?family=Exo:400,500,300italic' rel='stylesheet' type='text/css'>
+    <style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        font-family: Exo, sans-serif;
+        background: #E5E5E5;
+
+    }
+
+    h3 {
+        margin-left: 10px;
+        font-size: 15em;
+        font-weight: 400;
+        color: #EFEFEF;
+        position: absolute;
+        z-index: -1;
+        margin-top: 10%;
+        line-height: 1em;
+    }
+
+    #content {
+        margin-top: 20%;
+        margin-left: 50px;
+        font-size: 2em;
+        display: inline-block;
+        font-weight: 500;
+    }
+
+    ol {
+        list-style: none;
+        }
+
+    li {
+        padding: 10px 0 10px 0;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:link {
+        color: #00B4FF;
+    }
+
+    a:hover {
+        color: #515151;
+    }
+
+    a:visited {
+        color: #515151;
+    }
+
+    span {
+        font-weight: 300;
+        font-style: italic;
+        color: #515151;
+    }
+    </style>
+  </head>
+  <body>
+     
+    <h3>Top Stories</h3>
+
+    <div id="content">
+         <ol>
+              <li><a href="{{ items[0][2] }}" target="_blank">{{ items[0][1] }}</a> <span>#{{ items[0][0] }}</span></li>
+              <li><a href="{{ items[1][2] }}" target="_blank">{{ items[1][1] }}</a> <span>#{{ items[1][0] }}</span></li>
+              <li><a href="{{ items[2][2] }}" target="_blank">{{ items[2][1] }}</a> <span>#{{ items[2][0] }}</span></li>
+
+         </ol>
+    </div>
+      
+  </body>
+</html>
