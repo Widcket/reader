@@ -14,3 +14,11 @@ then picking a random new item from each topic and displaying the result.
 
 ## What it looks like
 ![Reader](http://i.imgur.com/F93adt5.png)
+
+## How to run it
+```
+pip install bottle
+pip install feedparser
+python reader.py
+```
+Then go to http://localhost:8080
